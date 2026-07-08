@@ -1,17 +1,25 @@
 import React from "react";
-import './Dashboard.css'
+import './Customers.css'
+import Anavbar from "./Anavbar";
 
 
 const Contacts = () =>{
     return(
+        <>
+        <Anavbar/>
         <header>
         <div className="page-header">
            <div className="page-name">
                 <h2>Contacts</h2>
             </div>
                 <button className="page-btn">View Website</button>
-          </div>  
+        </div>  
         </header>
+        <div className="customers">
+            <div className="customers-container">
+            </div> 
+        </div>
+        </>
     );
 }
 
