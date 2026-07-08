@@ -1,0 +1,44 @@
+.hero{
+    width:100%;
+    height:650px;
+    position: relative;
+}
+.herotext{
+    width:100%;
+    height:auto;
+    position: absolute;
+    top:45%;
+    left:52%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+h1{
+    font-size: 50px;
+    font-weight:bold;
+    color:#0D5BFF;
+    line-height: 90%;
+}
+p{
+    font-size:16px;
+    font-weight: bold;
+    color: #475569;
+    margin-top: 20px;
+}
+.features{
+    position: absolute;
+    top:60%;
+    left:2%;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: small;
+    color: white;
+    z-index: 1;
+}
+.features span{
+    padding: 5px 10px 5px;
+    border-radius:5px;
+    color:#475569;
+    background-color: transparent;
+    border: rgb(99, 96, 96) 2px solid;
+}
