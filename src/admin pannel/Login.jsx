@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import email from "/email.png"
 import Lock from "/Lock.png"
 import './Login.css';
@@ -17,7 +17,7 @@ function Login() {
 
     const handleLogin = () => {
         const user = JSON.parse(localStorage.getItem('username'));
-        if (user && user.username === username && user.password === password) {
+        if (username === "sp361645@gmail.com" && password === "123456") {
             setTimeout(() => {
                 navigate('/admin/dashboard');
             }, 1000);
