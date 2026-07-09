@@ -16,7 +16,6 @@ function Login() {
     
 
     const handleLogin = () => {
-        const user = JSON.parse(localStorage.getItem('username'));
         if (username === "sp361645@gmail.com" && password === "123456") {
             setTimeout(() => {
                 navigate('/admin/dashboard');

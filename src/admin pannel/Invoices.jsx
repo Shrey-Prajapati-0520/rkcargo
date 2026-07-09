@@ -1,5 +1,5 @@
 import React from "react";
-import './Customers.css'
+import './Invoices.css'
 import Anavbar from "./Anavbar";
 
 
@@ -15,8 +15,34 @@ const Invoices = () =>{
                 <button className="page-btn">View Website</button>
         </div>  
         </header>
-        <div className="customers">
-            <div className="customers-container">
+        <div className="invoices">
+            <div className="invoices-container">
+                <div className="input-container-invoices">
+                 <input type="text" placeholder="Search invoices,customer..." className="search-input"/>
+                 <button className="input-btn">+ Create Document</button>
+                </div> 
+                <div className="itable-container">
+                    <div className="itable-row">
+                        <table className="itable">
+                            <thead>
+                                <tr>
+                                    <th>Doc. No.</th>
+                                    <th>Type</th>
+                                    <th>Customer</th>
+                                    <th>Ampount</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No Documents</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
             </div> 
         </div>
         </>

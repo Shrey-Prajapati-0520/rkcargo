@@ -88,6 +88,11 @@ img{
     border-top: 1px solid rgba(255,255,255,0.14);
     padding: 12px;
 }
+
+.logout a:hover{
+       background-color: #252B37;
+
+}
 .logout-button{ 
     width: 100%;
     text-decoration: none;
@@ -96,6 +101,7 @@ img{
     background-color:#131720 ;
     color:#e2e6e9b2;
     font-size:16px;
+    cursor: pointer;
     font-weight: 300;
     padding:10px;
 }

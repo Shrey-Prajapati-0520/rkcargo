@@ -1,4 +1,5 @@
 import React from "react";
+import { redirect, useNavigate } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FiBox, FiUsers } from "react-icons/fi";
@@ -13,7 +14,14 @@ import { LuLogOut } from "react-icons/lu";
 import './Anavbar.css'
 
 const Anavbar = () =>{
+    const navigate = useNavigate();
 
+    const handleLogout = () => {
+            setTimeout(() => {
+                navigate('/admin/login');
+            }, 1000);
+        }
+    
     return(
         <nav className="nav">
             <div className="logo">
@@ -36,7 +44,7 @@ const Anavbar = () =>{
                 <NavLink to="/admin/adminmanagement" className={({ isActive }) => (isActive ? "active" : "")}><MdOutlineAdminPanelSettings/> Admin Management</NavLink>
             </div>
             <div className="logout">
-                <button className="logout-button"><LuLogOut/> Logout</button>
+                <button className="logout-button" onClick={handleLogout}><LuLogOut/> Logout</button>
             </div>
         </nav>
     );

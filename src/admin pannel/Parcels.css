@@ -94,6 +94,7 @@ header{
     justify-content: center;
     background-color: #FFFFFF;
     margin-top: 20px;
+    border: 1px solid rgb(0, 0, 0,0.16);
     height: 5rem;
 }
 .table-row{
