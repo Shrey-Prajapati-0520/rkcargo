@@ -107,3 +107,8 @@ img{
     font-weight: 300;
     padding:10px;
 }
+
+.logout-button:hover{
+    background-color: #e0e7f5;
+    border-radius: 12px;
+}
