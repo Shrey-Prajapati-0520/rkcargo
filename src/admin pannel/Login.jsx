@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react';
 import { redirect, useNavigate } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 import email from "/email.png"
 import Lock from "/Lock.png"
 import './Login.css';
@@ -44,7 +45,7 @@ function Login() {
                 </div>
                 <div className="login-btn-container">
                     <button className="login-btn" onClick={handleLogin}>
-                        Sign In
+                        Sign In <FaArrowRight/>
                     </button>
                 </div>
                 </div>

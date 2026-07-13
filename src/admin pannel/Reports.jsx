@@ -1,5 +1,5 @@
 import React from "react";
-import './Customers.css'
+import './Reports.css'
 import Anavbar from "./Anavbar";
 
 
@@ -15,8 +15,14 @@ const Reports = () =>{
                 <button className="page-btn">View Website</button>
         </div>  
         </header>
-        <div className="customers">
-            <div className="customers-container">
+        <div className="reports">
+            <div className="reports-container">
+                <div className="reports-top-container">
+                    <p>Report Type</p>
+                    <button className="report-btn" role="combobox" aria-controls="radix-:r1v:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="close">
+                        <span className="report-btn-span">Parcel Report</span>
+                    </button>
+                </div>
             </div> 
         </div>
         </>
