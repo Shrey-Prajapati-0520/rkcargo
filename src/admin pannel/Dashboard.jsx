@@ -4,7 +4,7 @@ import { MdLocationOn, MdEmail } from "react-icons/md"
 import { LuDownload , LuListFilter } from "react-icons/lu";
 import { FiBox, FiTruck } from "react-icons/fi";
 import { GiConfirmed } from "react-icons/gi";
-import { MdOutlinePendingActions } from "react-icons/md";
+import { MdOutlinePendingActions , MdOutlinePayments , MdAccountBalanceWallet } from "react-icons/md";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaArrowTrendDown } from "react-icons/fa6";
 import { TbPointFilled } from "react-icons/tb";
@@ -89,7 +89,7 @@ const Dashboard = () =>{
                     <div className="firstrow-cards">
                        <div className="txt">
                          <div className="ig3">
-                           <RiMoneyRupeeCircleLine/>
+                           <MdOutlinePayments/>
                       </div>
                          <p className="pn">Monthly Revenue</p>
                          <p className="pd"><FaRupeeSign/>0</p>

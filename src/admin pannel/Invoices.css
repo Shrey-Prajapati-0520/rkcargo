@@ -13,27 +13,68 @@ header{
     height: 100%;
     border-bottom: 1px solid rgb(0, 0, 0,0.16);
 }
-.page-name{
+.invoice-input{
+    width: 70%;
+    display: flex;
     font-family: 'poppins' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 10px;
     font-weight: 600;
-    color:#131720;
+    color:#3d4352;
+    border-right: 1px solid rgb(0, 0, 0,0.16);
 }
-.page-btn{
-    position: absolute;
-    top:20%;
-    left:70%;
-    padding: 8px 12px;
-    font-family: 'inter' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #F9FAFB;
-    font-size: 14px;
+.invoice-input .search-input{
+    width:36%;
+    background-color: #EFF4FF;
+    border: none;
+}
+
+.new-invoice{
+    padding: 12px 24px;
+    background-color: #FE6B00;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    color: #572000;
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0,0.16);
 }
-.page-btn:hover{
-    color:white;
-    background-color: #F97415;
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    top:15%;
+    left:70%;
+
+}
+.userdetails h3{
+    display: block;
+    font-size: 1em;
+    font-weight: bolder;
+    unicode-bidi: isolate;
+}
+.userdetails h5 {
+    display: block;
+    font-size: 0.50em;
+    font-weight: 600;
+    text-align: center;
+    color: #475569;
+    unicode-bidi: isolate;
+}
+.userimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;;
+}
+.userimg svg{
+    height:38px;
+    width: 38px;
 }
 .invoices{
     max-width: 1200px;
@@ -53,71 +94,181 @@ header{
     max-width: 1200px;
     padding: 24px;
 }
-.input-container-invoices{
-    position: relative;
+.inv-top{
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 40px;
-}
-.input-container-invoices .search-input{
-    width: 30%;
-    height: 100%;
-    padding: 8px 12px;
-    font-family: 'inter' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0,0.16);
-    outline-color: #2D72D3;
 }
 
-.input-container-invoices .input-btn{
-    padding: 9px 14px;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    border-radius: 10px;
-    border: none;
-    background-color: #2D72D3;
-    color: #FFFFFF;
-    width: 17%;
-    cursor: pointer;
+.inv-txt h1 {
+    font-size: 25px;
+    font-weight: 550;
+    color: black;
+    line-height: 90%;
 }
-.itable-container{
+.inv-txt p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    margin-top: 5px;
+}
+
+.invoice-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    flex-direction: row;
+    justify-content: space-between;
+    gap:24px;
+    margin-top: 30px;
+}
+.i-cards{
+    width:100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0,0.16);
+    background-color: #FFFFFF;
+}
+.i-first{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.i-second{
+    display: flex;
+    flex-direction: column;
+}
+.i-second p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    margin-top: 5px;
+}
+.i-img{
+    width: 40px;
+    height: 40px;
+    border-radius:5px;
+    background: #F8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #BA1A1A;
+}
+
+
+.i-img-2{
+    width: 40px;
+    height: 40px;
+    border-radius:5px;
+    background: #E7F2EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #15803D;
+}
+.i-img-3{
+    width: 40px;
+    height: 40px;
+    border-radius:5px;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #000000;
+}
+
+
+
+.i-second h3 {
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+}
+.i-second svg{
+    width: 16px;
+    height: 16px;
+    color: #475569;
+}
+.i-first span{    
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    color: #BA1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 15px;
+    background-color: #F8E8E8;
+}
+.i-first .vsly{    
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    color: #15803D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 15px;
+    background-color: #E7F2EB;
+}
+.i-second .i-acc{    
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    color: #C23030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #F9ECE6;
+}
+
+
+.ctable-container{
     width: 100%;
     position: relative;
     display: flex;
-    align-items: center;
     border-radius: 12px;
+    padding: 2px 5px 2px 5px;
     justify-content: center;
-    margin-top: 60px;
-    border-radius: 12px;
     background-color: #FFFFFF;
+    margin-top: 20px;
     border: 1px solid rgb(0, 0, 0,0.16);
+    height: 5rem;
 }
-.itable-row{
+.ctable-row{
     position: absolute;
     width: 100%;
-    padding: 0px 10px;
     align-items: center;
-    border-radius: 12px;
-    border: 1px solid rgb(0, 0, 0,0.16);
+    border-radius:10px 10px 0 0;
     background-color: #FFFFFF;
     justify-content: space-between;
+    height: 3rem;
 }
-.itable{
+.ctable{
     width: 100%;
     padding: 10px;
-    
+    border-radius:10px 10px 0 0;
+    background-color: #E5EEFF;
+    border-bottom: 1px solid rgb(0, 0, 0,0.16);
 }
-.itable thead tr{
+tr{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(0, 0, 0,0.16);
-    height: 3rem;
 }
 th{
     font-size: 14px;
@@ -128,13 +279,4 @@ th{
     padding-right: 1rem;
     align-items: center;
     justify-content: center;
-}
-td{
-    width: 100%;
-    font-size: 14px;
-    font-family: sans-serif;
-    color: #627084;
-    font-weight: 500;
-    padding: 40px 16px;
-    text-align: center;
 }
