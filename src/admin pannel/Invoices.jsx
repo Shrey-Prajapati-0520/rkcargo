@@ -2,9 +2,10 @@ import React from "react";
 import { useState } from "react";
 import './Invoices.css'
 import { FaUsers } from "react-icons/fa6";
-import { IoTimerOutline } from "react-icons/io5";
+import { IoTimerOutline , IoSearchOutline } from "react-icons/io5";
 import { MdOutlineCorporateFare , MdOutlinePayments, MdAccountBalanceWallet , MdOutlineAnalytics  } from "react-icons/md";
 import { IoStar } from "react-icons/io5";
+import { IoMdAdd } from "react-icons/io";
 import { FaRegCalendar, FaRegCalendarAlt, FaRupeeSign , FaUserCircle } from "react-icons/fa";
 import Anavbar from "./Anavbar";
 
@@ -19,6 +20,7 @@ const Invoices = () =>{
        <header>
             <div className="page-header">
              <div className="invoice-input">
+                  
                  <input type="text" placeholder="Search invoices, customers or ID..." className="search-input" />
              </div>
             <div className="user">
@@ -40,7 +42,7 @@ const Invoices = () =>{
                         <p>Manage and track your logistics billings and receivables.</p>
                     </div>
                     <div className="new-btn">
-                        <button className="new-invoice">+ Generate Invoice</button>
+                        <button className="new-invoice"><IoMdAdd/> Generate Invoice</button>
                     </div>
                 </div>
                 <div className="invoice-cards">
@@ -85,14 +87,22 @@ const Invoices = () =>{
                         <table className="ctable">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
-                                    <th>Actions</th>
+                                    <th>INVOICE #</th>
+                                    <th>DATE</th>
+                                    <th>CUSTOMER</th>
+                                    <th>AMOUNT</th>
+                                    <th>STATUS</th>
+                                    <th>ACTIONS</th>
                                 </tr>
                             </thead>
                         </table>
 
+                    </div>
+                </div>
+                <div className="recent-container">
+                    <h3>Recent Payment Activity</h3>
+                    <div className="recent-payments">
+                        <p>No Activity Found</p>
                     </div>
                 </div>
             </div> 

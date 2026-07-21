@@ -68,6 +68,8 @@ img{
     border-radius: 12px;
     font-weight: 300;
     padding:10px 12px;
+    border: none;
+    outline: none;
 }
 
 .anav-links .active{

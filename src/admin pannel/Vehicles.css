@@ -13,8 +13,7 @@ header{
     height: 100%;
     border-bottom: 1px solid rgb(0, 0, 0,0.16);
 }
-.invoice-input{
-    position: relative;
+.customer-input{
     width: 70%;
     display: flex;
     font-family: 'poppins' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,36 +22,20 @@ header{
     color:#3d4352;
     border-right: 1px solid rgb(0, 0, 0,0.16);
 }
-.invoice-input .search-input{
+.customer-input .search-input{
     width:36%;
     background-color: #EFF4FF;
     border: none;
 }
-.search-icon{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #475569;
-}
 
-
-.new-invoice{
-    padding: 12px 24px;
+.new-customer{
+    padding: 9px 15px 9px 15px;
     background-color: #FE6B00;
-    font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
     border: none;
     margin-left: 20px;
-    color: #572000;
     cursor: pointer;
-}
-.new-invoice svg{
-    margin-right: 3px;
-    height: 16px;
 }
 .user{
     display: flex;
@@ -91,7 +74,7 @@ header{
     height:38px;
     width: 38px;
 }
-.invoices{
+.vehicles{
     max-width: 1200px;
     margin-left: 256px;
     margin-right: 10px;
@@ -101,7 +84,7 @@ header{
     flex: 10;
     overflow-x:hidden;
 }
-.invoices-container{
+.vehicles-container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -109,137 +92,162 @@ header{
     max-width: 1200px;
     padding: 24px;
 }
-.inv-top{
+.veh-top{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.inv-txt h1 {
+.veh-txt h1 {
     font-size: 25px;
     font-weight: 550;
     color: black;
     line-height: 90%;
 }
-.inv-txt p{
+.veh-txt p{
     font-size: 14px;
     font-weight: 500;
     color: #475569;
     margin-top: 5px;
 }
-
-.invoice-cards{
+.v-btn-2{
+    padding: 12px 16px;
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    border: none;
+    gap:5px;
+    margin-left: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.v-btn-1{
+    padding: 12px 16px;
+    background-color: #DCE9FF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    border: none;
+    gap:5px;
+    margin-left: 20px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+}
+.vehicle-cards{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     flex-direction: row;
     justify-content: space-between;
-    gap:24px;
+    gap:0.4rem;
     margin-top: 30px;
 }
-.i-cards{
-    width:100%;
-    padding: 24px;
+.v-cards{
+    width:230px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
     border: 1px solid rgb(0, 0, 0,0.16);
     background-color: #FFFFFF;
 }
-.i-first{
+.v-first{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
-.i-second{
+.v-second{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 0px;
 }
-.i-second p{
-    font-size: 14px;
+.v-first p{
+    font-size: 16px;
     font-weight: 500;
     color: #475569;
-    margin-top: 6px;
+    margin: 0;
 }
-.i-img{
-    width: 40px;
-    height: 40px;
-    border-radius:5px;
-    background: #F8E8E8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    color: #BA1A1A;
-}
-
-
-.i-img-2{
-    width: 40px;
-    height: 40px;
-    border-radius:5px;
-    background: #E7F2EB;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    color: #15803D;
-}
-.i-img-3{
-    width: 40px;
-    height: 40px;
-    border-radius:5px;
-    background: #E5E5E5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    color: #000000;
-}
-
-
-
-.i-second h3 {
+.v-img{
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 8px;
+    border-radius: 15px;
+    background-color: #E2DFFF;
+}
+.v-img-2{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: #7A3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    border-radius: 15px;
+    background-color: #FFDBCC;
+}
+.v-img-3{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: #7A3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    border-radius: 15px;
+    background-color: #FFDBCC;
+}
+.v-img-4{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: #3A35A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    border-radius: 15px;
+    background-color: #E2DFFF;
+}
+
+
+.v-second h3 {
+    font-size: 24px;
+    line-height: 24px;
     letter-spacing: -0.01em;
     font-weight: 600;
-    margin-top: 3px;
 }
-.i-second svg{
-    width: 16px;
-    height: 16px;
-    color: #475569;
-}
-.i-first span{    
-    font-size: 10px;
-    line-height: 1;
-    font-weight: 700;
-    color: #BA1A1A;
+.v-second span{    
+    font-size: 14px;
+    font-weight: 600;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 12px;
-    border-radius: 15px;
-    background-color: #F8E8E8;
+    align-items: end;
+    margin-left: 6px;
 }
-.i-first .vsly{    
-    font-size: 10px;
-    line-height: 1;
-    font-weight: 700;
-    color: #15803D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 12px;
-    border-radius: 15px;
-    background-color: #E7F2EB;
-}
-.i-second .i-acc{    
+.v-second .c-acc{    
     font-size: 10px;
     line-height: 1;
     font-weight: 700;
@@ -253,7 +261,7 @@ header{
 }
 
 
-.ctable-container{
+.vtable-container{
     width: 100%;
     position: relative;
     display: flex;
@@ -263,9 +271,9 @@ header{
     background-color: #FFFFFF;
     margin-top: 20px;
     border: 1px solid rgb(0, 0, 0,0.16);
-    height: 5rem;
+    height: 150px;
 }
-.ctable-row{
+.vtable-row{
     position: absolute;
     width: 100%;
     align-items: center;
@@ -274,7 +282,7 @@ header{
     justify-content: space-between;
     height: 3rem;
 }
-.ctable{
+.vtable{
     width: 100%;
     padding: 10px;
     border-radius:10px 10px 0 0;
@@ -289,46 +297,45 @@ tr{
 th{
     font-size: 14px;
     font-family: sans-serif;
-    color: #61616c;
-    font-weight: 600;
-    letter-spacing: 0.7px;
-    line-height: 20px;
+    color: #627084;
+    font-weight: 500;
     padding-left: 1rem;
     padding-right: 1rem;
     align-items: center;
-    text-transform: uppercase;
     justify-content: center;
 }
-.recent-container{
-    width:100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0px 24px 24px 24px;
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    border: 1px solid rgb(0, 0, 0,0.16);
-    margin-top: 20px;
-}
-.recent-container h3 {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid rgb(0, 0, 0,0.16);
-    padding: 20px 0px 20px 0px;
-    display: block;
-    font-size: 1.17em;
-    font-family: sans-serif;
-    color: #151516;
-    font-weight: 600;
-    letter-spacing: 0.7px;
-    line-height: 20px;
-    align-items: center;
-    text-transform:capitalize;
-    justify-content: center;
-}
-.recent-container p {
+.vehicles-detail{
     font-size: 16px;
     font-weight: 400;
     color: #475569;
-    padding: 30px 0px 30px 0px;
+    text-align: center;
+    padding: 40px 0px;
+    margin-top: 0px;
+}
+.vehicle-btns{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:12px;
+    margin-top: 20px;
+}
+.vehicle-btns button{
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-weight: 400;
+    line-height:16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #0B1C30;
+    background-color: #deeafc;
+}
+.vehicle-btns button:hover{
+    background-color: #D3E4FE;
+}
+.vehicle-btns button.active{
+    background-color:#000000;
+    color: #ffffff;
 }
